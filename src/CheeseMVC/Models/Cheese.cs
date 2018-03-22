@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.Generic;
 
 namespace CheeseMVC.Models
 {
@@ -10,5 +10,7 @@ namespace CheeseMVC.Models
 
         public int CategoryID { get; set; }
         public CheeseCategory Category { get; set; }
+
+        public IList<CheeseMenu> CheeseMenus { get; set; }
     }
 }
